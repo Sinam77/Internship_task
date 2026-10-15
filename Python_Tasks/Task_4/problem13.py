@@ -1,0 +1,13 @@
+# Problem 13: Symmetric Difference
+# https://www.hackerrank.com/challenges/symmetric-difference/problem
+
+m = int(input())
+set1 = set(map(int, input().split()))
+
+n = int(input())
+set2 = set(map(int, input().split()))
+
+result = set1.symmetric_difference(set2)
+
+for i in sorted(result):
+    print(i)
